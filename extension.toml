@@ -1,0 +1,11 @@
+id = "todotxt"
+name = "Todo.txt"
+schema_version = 1
+version = "0.1"
+description = "Todo.txt syntax support."
+repository = "https://github.com/pursvir/zed-todotxt"
+authors = ["pursvir"]
+
+[grammars.todotxt]
+repository = "https://github.com/arnarg/tree-sitter-todotxt"
+rev = "3937c5cd105ec4127448651a21aef45f52d19609"

@@ -1,0 +1,5 @@
+name = "Todo.txt"
+grammar = "todotxt"
+path_suffixes = ["txt", "todo.txt"]
+line_comments = []
+brackets = []
