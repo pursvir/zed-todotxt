@@ -1,4 +1,4 @@
-# zed-todotxt
+# zed-todo.txt
 
 Todo.txt syntax highlighting for Zed.
 
