@@ -1,0 +1,13 @@
+diff --git a/languages/todo.txt/highlights.scm b/languages/todo.txt/highlights.scm
+index 051c966..bdbed61 100644
+--- a/languages/todo.txt/highlights.scm
++++ b/languages/todo.txt/highlights.scm
+@@ -3,4 +3,7 @@
+ (task (date) @comment)
+ (task (project) @string)
+ (task (context) @type)
+-(task (kv) @boolean)
++((kv) @boolean
++ (#match? @boolean "^due:"))
++((kv) @function
++ (#not-match? @function "^due:"))
