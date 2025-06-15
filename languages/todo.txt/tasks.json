@@ -1,0 +1,53 @@
+[
+    {
+        "label": "Mark as done",
+        "command": "env TODO_FILE=$ZED_FILE todo.sh -a do $ZED_ROW",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "never",
+        "shell": "system",
+        "tags": ["todo.sh"]
+    },
+    {
+        "label": "Archive current file",
+        "command": "env TODO_FILE=$ZED_FILE DONE_FILE=$ZED_WORKTREE_ROOT/done.txt todo.sh archive",
+        "use_new_terminal": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+        "shell": "system",
+        "tags": ["todo.sh"]
+    },
+    {
+        "label": "List contexts",
+        "command": "env TODO_FILE=$ZED_FILE todo.sh lsc",
+        "use_new_terminal": false,
+        "show_summary": false,
+        "show_command": false,
+        "allow_concurrent_runs": true,
+        "reveal": "always",
+        "shell": "system",
+        "tags": ["todo.sh"]
+    },
+    {
+        "label": "List projects",
+        "command": "env TODO_FILE=$ZED_FILE todo.sh lsprj",
+        "use_new_terminal": false,
+        "show_summary": false,
+        "show_command": false,
+        "allow_concurrent_runs": true,
+        "reveal": "always",
+        "shell": "system",
+        "tags": ["todo.sh"]
+    },
+    {
+        "label": "Generate report",
+        "command": "env TODO_FILE=$ZED_FILE REPORT_FILE=$ZED_WORKTREE_ROOT/report.txt todo.sh report",
+        "use_new_terminal": false,
+        "show_summary": false,
+        "show_command": false,
+        "allow_concurrent_runs": false,
+        "reveal": "always",
+        "shell": "system",
+        "tags": ["todo.sh"]
+    }
+]

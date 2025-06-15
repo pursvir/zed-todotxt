@@ -6,6 +6,12 @@ Todo.txt syntax highlighting for Zed.
 
 Clone this repo. Then open Zed, go to "Extensions" settings, click **"Install dev extension"** and select the directory containing this repository contents.
 
+# Zed tasks
+
+This repository comes with several [Zed tasks](https://zed.dev/docs/tasks) which you can invoke to do actions with currently focused todo.txt file.
+
+To make them work make sure that you have [todo.sh](https://github.com/todotxt/todo.txt-cli) installed and that it supports [environment variables overriding](https://github.com/todotxt/todo.txt-cli/pull/462).
+
 # Custom highlighting
 
 ## due: key-values
