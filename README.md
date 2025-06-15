@@ -1,6 +1,6 @@
 # zed-todo.txt
 
-Todo.txt syntax highlighting for Zed.
+Todo.txt file format support for Zed.
 
 # Installation
 
