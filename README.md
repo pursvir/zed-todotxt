@@ -19,7 +19,7 @@ git apply examples/custom-due-highlighting.patch
 To revert:
 
 ```sh
-git apply examples/custom-due-highlighting.patch
+git apply -R examples/custom-due-highlighting.patch
 ```
 
-After that rebuild this extension. Go to "Extensions" settings, find Todo.txt and choose "Rebuild".
+After any of those actions you have to rebuild this extension to make the changes work. Go to "Extensions" settings, find Todo.txt and choose "Rebuild".
