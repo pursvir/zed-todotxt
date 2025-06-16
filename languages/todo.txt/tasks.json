@@ -1,7 +1,11 @@
 [
     {
         "label": "Mark as done",
-        "command": "env TODO_FILE=$ZED_FILE todo.sh -a do $ZED_ROW",
+        "command": "export TODO_DIR TODO_FILE && todo.sh -a do $ZED_ROW",
+        "env": {
+            "TODO_DIR": "$ZED_DIRNAME",
+            "TODO_FILE": "$ZED_FILE"
+        },
         "use_new_terminal": false,
         "allow_concurrent_runs": false,
         "reveal": "never",
@@ -10,7 +14,12 @@
     },
     {
         "label": "Archive current file",
-        "command": "env TODO_FILE=$ZED_FILE DONE_FILE=$ZED_WORKTREE_ROOT/done.txt todo.sh archive",
+        "command": "export TODO_DIR TODO_FILE DONE_FILE && todo.sh archive",
+        "env": {
+            "TODO_DIR": "$ZED_DIRNAME",
+            "TODO_FILE": "$ZED_FILE",
+            "DONE_FILE": "$ZED_WORKTREE_ROOT/done.txt"
+        },
         "use_new_terminal": false,
         "allow_concurrent_runs": false,
         "reveal": "always",
@@ -19,7 +28,11 @@
     },
     {
         "label": "List contexts",
-        "command": "env TODO_FILE=$ZED_FILE todo.sh lsc",
+        "command": "export TODO_DIR TODO_FILE && echo -e \"Contexts of $ZED_RELATIVE_FILE:\n\" && todo.sh lsc",
+        "env": {
+            "TODO_DIR": "$ZED_DIRNAME",
+            "TODO_FILE": "$ZED_FILE"
+        },
         "use_new_terminal": false,
         "show_summary": false,
         "show_command": false,
@@ -30,7 +43,11 @@
     },
     {
         "label": "List projects",
-        "command": "env TODO_FILE=$ZED_FILE todo.sh lsprj",
+        "command": "export TODO_DIR TODO_FILE && echo -e \"Projects of $ZED_RELATIVE_FILE:\n\" && todo.sh lsprj",
+        "env": {
+            "TODO_DIR": "$ZED_DIRNAME",
+            "TODO_FILE": "$ZED_FILE"
+        },
         "use_new_terminal": false,
         "show_summary": false,
         "show_command": false,
@@ -41,7 +58,13 @@
     },
     {
         "label": "Generate report",
-        "command": "env TODO_FILE=$ZED_FILE REPORT_FILE=$ZED_WORKTREE_ROOT/report.txt todo.sh report",
+        "command": "export TODO_DIR TODO_FILE DONE_FILE REPORT_FILE && todo.sh report",
+        "env": {
+            "TODO_DIR": "$ZED_DIRNAME",
+            "TODO_FILE": "$ZED_FILE",
+            "DONE_FILE": "$ZED_WORKTREE_ROOT/done.txt",
+            "REPORT_FILE": "$ZED_WORKTREE_ROOT/report.txt"
+        },
         "use_new_terminal": false,
         "show_summary": false,
         "show_command": false,
