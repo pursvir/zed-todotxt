@@ -19,13 +19,13 @@ To make them work make sure that you have [todo.sh](https://github.com/todotxt/t
 In case if you want `due:` key-value pairs to be highlighted in the different way than anothers, patch your highlights.scm with this command:
 
 ```sh
-git apply examples/custom-due-highlighting.patch
+git apply patches/date-kv-meta-overrides.patch
 ```
 
 To revert:
 
 ```sh
-git apply -R examples/custom-due-highlighting.patch
+git apply -R patches/date-kv-meta-overrides.patch
 ```
 
 After any of those actions you have to rebuild this extension to make the changes work. Go to "Extensions" settings, find Todo.txt and choose "Rebuild".

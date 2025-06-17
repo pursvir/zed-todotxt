@@ -1,4 +1,4 @@
-(done_task) @comment
+((done_task) @comment)
 (task (priority) @keyword)
 (task (date) @comment)
 (task (project) @string)
