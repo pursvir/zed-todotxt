@@ -5,4 +5,4 @@ Currently available Zed tasks are:
 - "List projects"
 - "Generate report"
 
-To make them work make sure that you have [todo.sh](https://github.com/todotxt/todo.txt-cli) installed and that it supports [environment variables overriding](https://github.com/todotxt/todo.txt-cli/pull/460).
+To make them work make sure that you have [todo.sh](https://github.com/todotxt/todo.txt-cli) installed (and available in $PATH) and that it supports [environment variables overriding](https://github.com/todotxt/todo.txt-cli/pull/460).
