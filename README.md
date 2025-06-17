@@ -8,24 +8,8 @@ Clone this repo. Then open Zed, go to "Extensions" settings, click **"Install de
 
 # Zed tasks
 
-This repository comes with several [Zed tasks](https://zed.dev/docs/tasks) which you can invoke to do actions with currently focused todo.txt file.
-
-To make them work make sure that you have [todo.sh](https://github.com/todotxt/todo.txt-cli) installed and that it supports [environment variables overriding](https://github.com/todotxt/todo.txt-cli/pull/460).
+This repository comes with several [Zed tasks](https://zed.dev/docs/tasks) which you can invoke to do some action with the current todo.txt file. For more info read [this section](./docs/Zed-tasks.md).
 
 # Custom highlighting
 
-## due: key-values
-
-In case if you want `due:` key-value pairs to be highlighted in the different way than anothers, patch your highlights.scm with this command:
-
-```sh
-git apply patches/date-kv-meta-overrides.patch
-```
-
-To revert:
-
-```sh
-git apply -R patches/date-kv-meta-overrides.patch
-```
-
-After any of those actions you have to rebuild this extension to make the changes work. Go to "Extensions" settings, find Todo.txt and choose "Rebuild".
+If you'd like to override the default highlighting rules, read [this section](./docs/highlighting-overrides.md).
