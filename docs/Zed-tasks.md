@@ -1,4 +1,4 @@
-This repository comes with several [Zed tasks](https://zed.dev/docs/tasks) which you can invoke to do actions with currently focused todo.txt file:
+Currently available Zed tasks are:
 - "Mark as done" - mark a task under your cursor as done
 - "Archive current file"
 - "List contexts"
