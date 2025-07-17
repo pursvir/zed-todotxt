@@ -1,6 +1,6 @@
 [
     {
-        "label": "Mark as done",
+        "label": "Mark $ZED_ROW of $ZED_FILENAME as done",
         "command": "export TODO_DIR TODO_FILE && todo.sh -a do $ZED_ROW",
         "env": {
             "TODO_DIR": "$ZED_DIRNAME",
@@ -13,7 +13,7 @@
         "tags": ["todo.sh"]
     },
     {
-        "label": "Archive current file",
+        "label": "Archive $ZED_FILENAME",
         "command": "export TODO_DIR TODO_FILE DONE_FILE && todo.sh archive",
         "env": {
             "TODO_DIR": "$ZED_DIRNAME",
@@ -27,7 +27,7 @@
         "tags": ["todo.sh"]
     },
     {
-        "label": "List contexts",
+        "label": "List contexts of $ZED_FILENAME",
         "command": "export TODO_DIR TODO_FILE && echo -e \"Contexts of $ZED_RELATIVE_FILE:\n\" && todo.sh lsc",
         "env": {
             "TODO_DIR": "$ZED_DIRNAME",
@@ -42,7 +42,7 @@
         "tags": ["todo.sh"]
     },
     {
-        "label": "List projects",
+        "label": "List projects of $ZED_FILENAME",
         "command": "export TODO_DIR TODO_FILE && echo -e \"Projects of $ZED_RELATIVE_FILE:\n\" && todo.sh lsprj",
         "env": {
             "TODO_DIR": "$ZED_DIRNAME",
@@ -57,7 +57,7 @@
         "tags": ["todo.sh"]
     },
     {
-        "label": "Generate report",
+        "label": "Generate report of $ZED_FILENAME",
         "command": "export TODO_DIR TODO_FILE DONE_FILE REPORT_FILE && todo.sh report",
         "env": {
             "TODO_DIR": "$ZED_DIRNAME",
