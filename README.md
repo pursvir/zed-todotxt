@@ -1,4 +1,4 @@
-# zed-todo.txt
+# zed-todotxt
 
 Todo.txt file format support for Zed.
 

@@ -1,4 +1,4 @@
-name = "Todo.txt"
+name = "Todotxt"
 grammar = "todotxt"
 path_suffixes = ["txt", "todo.txt"]
 line_comments = []
