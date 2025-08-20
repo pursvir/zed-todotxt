@@ -4,6 +4,12 @@ Todo.txt file format support for Zed.
 
 # Installation
 
+## Standard way
+
+Search and install "Todotxt" extension.
+
+## Development
+
 Clone this repo. Then open Zed, go to "Extensions" settings, click **"Install dev extension"** and select the directory containing this repository contents.
 
 # Zed tasks
