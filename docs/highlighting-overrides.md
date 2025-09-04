@@ -1,3 +1,5 @@
+**NOTE:** all actions described below are applicable **only in dev installation!**
+
 # Date key-values
 
 In case if you want date key-value pairs (`due:`, `t:` and `wait:`) to be highlighted in red, like priorities, apply this patch with the command below:
