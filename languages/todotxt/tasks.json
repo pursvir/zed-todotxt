@@ -19,7 +19,7 @@
         "env": {
             "TODO_DIR": "$ZED_DIRNAME",
             "TODO_FILE": "$ZED_FILE",
-            "DONE_FILE": "$ZED_WORKTREE_ROOT/done.txt"
+            "DONE_FILE": "$ZED_WORKTREE_ROOT/done.todo.txt"
         },
         "use_new_terminal": false,
         "allow_concurrent_runs": false,

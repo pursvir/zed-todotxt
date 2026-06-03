@@ -1,0 +1,13 @@
+--- languages/todotxt/highlights.scm	2026-06-03 16:37:19.468696938 +0300
++++ highlightings/date-tags.scm	2026-06-03 16:32:39.080366148 +0300
+@@ -1,6 +1,10 @@
++; Alternative highlighting rule set which introduces different highlighting of key-value tags, associated with dates, namely "due:", "t:" and "wait:".
++
+ ((done_task) @comment)
+ (task (priority) @keyword)
+ (task (date) @string)
+ (task (project) @type)
+ (task (context) @function)
+ (task (kv) @boolean)
++(task (kv) @keyword
++  (#match? @keyword "^(?:due|t|wait):"))

@@ -1,0 +1,6 @@
+((done_task) @comment)
+(task (priority) @keyword)
+(task (date) @string)
+(task (project) @type)
+(task (context) @function)
+(task (kv) @boolean)

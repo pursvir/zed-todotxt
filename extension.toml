@@ -1,7 +1,7 @@
 id = "todotxt"
 name = "Todotxt"
 schema_version = 1
-version = "0.2.3"
+version = "0.4"
 description = "Todo.txt support."
 repository = "https://github.com/pursvir/zed-todotxt"
 authors = ["pursvir"]

@@ -1,0 +1,17 @@
+--- highlights.default.scm	2026-06-03 16:48:33.966638692 +0300
++++ languages/todotxt/highlights.scm	2026-06-03 17:38:42.648242482 +0300
+@@ -1,6 +1,13 @@
++(
++    (task
++        (kv) @_kv_to_hide
++    ) @comment
++    (#match? @_kv_to_hide "^(?:h|hide):1$")
++)
+ ((done_task) @comment)
+ (task (priority) @keyword)
+ (task (date) @string)
+ (task (project) @type)
+ (task (context) @function)
+-(task (kv) @boolean)
++(task (kv) @boolean
++    (#not-match? @boolean "^(?:h|hide):1$"))
